@@ -10,5 +10,5 @@ O site não depende de Node, React, Vite ou build step.
 
 ## Destinos
 
-- Aplicativo: https://diminuveis.ai.studio/
-- GitHub / Android: https://github.com/samuel1982tiem-glitch/Evangelho-das-Dimenuveis
+- Aplicativo: https://dimenuveis.ai.studio/
+- GitHub / Android: https://github.com/dimenuvel/Evangelho-das-Dimenuveis
