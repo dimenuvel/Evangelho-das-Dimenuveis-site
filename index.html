@@ -1,103 +1,1143 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#3f4635">
-<meta name="description" content="Evangelho das Dimenúveis — um evangelho sobre o Padrão, o Espelho e a arte de abidar.">
+<meta name="description" content="Evangelho das Dimenúveis — um evangelho sobre o Padrão, o Espelho, a arte de abidar e o Laboratório de Som.">
 <title>Evangelho das Dimenúveis</title>
+
 <style>
-:root{--paper:#eee5d2;--paper2:#e5d8bd;--ink:#29271f;--muted:#6d6658;--green:#3f4635;--brown:#71583d;--gold:#a78345;--line:rgba(67,57,42,.22);--white:#f8f3e8}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:radial-gradient(circle at 15% 10%,rgba(167,131,69,.1),transparent 24rem),radial-gradient(circle at 90% 45%,rgba(63,70,53,.08),transparent 28rem),linear-gradient(90deg,rgba(90,70,40,.025) 1px,transparent 1px),var(--paper);background-size:auto,auto,32px 32px,auto;font-family:Georgia,"Times New Roman",serif;line-height:1.72}a{color:inherit}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
-header{border-bottom:1px solid var(--line);background:rgba(238,229,210,.94);position:sticky;top:0;z-index:20;backdrop-filter:blur(8px)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{text-decoration:none;font:700 .78rem Arial,sans-serif;letter-spacing:.25em;color:var(--green);white-space:nowrap}nav{display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-end}nav a{text-decoration:none;font:600 .76rem Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}nav a:hover{color:var(--green)}
-.hero{padding:52px 0 54px;text-align:center}.spiral{width:72px;height:72px;margin:0 auto 18px;display:grid;place-items:center;position:relative}
+:root{
+  --paper:#eee5d2;
+  --paper2:#e5d8bd;
+  --ink:#29271f;
+  --muted:#6d6658;
+  --green:#3f4635;
+  --brown:#71583d;
+  --gold:#a78345;
+  --line:rgba(67,57,42,.22);
+  --white:#f8f3e8;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 15% 10%,rgba(167,131,69,.1),transparent 24rem),
+    radial-gradient(circle at 90% 45%,rgba(63,70,53,.08),transparent 28rem),
+    linear-gradient(90deg,rgba(90,70,40,.025) 1px,transparent 1px),
+    var(--paper);
+  background-size:auto,auto,32px 32px,auto;
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.72;
+}
+
+a{color:inherit}
+
+.wrap{
+  width:min(1080px,calc(100% - 36px));
+  margin:auto
+}
+
+header{
+  border-bottom:1px solid var(--line);
+  background:rgba(238,229,210,.94);
+  position:sticky;
+  top:0;
+  z-index:20;
+  backdrop-filter:blur(8px)
+}
+
+.nav{
+  min-height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px
+}
+
+.brand{
+  text-decoration:none;
+  font:700 .78rem Arial,sans-serif;
+  letter-spacing:.25em;
+  color:var(--green);
+  white-space:nowrap
+}
+
+nav{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:flex-end
+}
+
+nav a{
+  text-decoration:none;
+  font:600 .76rem Arial,sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted)
+}
+
+nav a:hover{color:var(--green)}
+
+.hero{
+  padding:52px 0 54px;
+  text-align:center
+}
+
+.spiral{
+  width:72px;
+  height:72px;
+  margin:0 auto 18px;
+  display:grid;
+  place-items:center;
+  position:relative
+}
+
 .spiral:before{
   content:"";
-  width:52px;height:52px;
+  width:52px;
+  height:52px;
   border:2px solid var(--gold);
   border-radius:50%;
   position:absolute;
-  inset:10px;
-  box-shadow:none;
+  inset:10px
 }
+
 .spiral:after{
   content:"";
-  width:27px;height:27px;
+  width:27px;
+  height:27px;
   border:2px solid var(--gold);
   border-radius:50%;
   position:absolute;
   inset:22px;
-  background:var(--paper);
+  background:var(--paper)
 }
-.kicker,.eyebrow{font:700 .72rem Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--brown)}h1{margin:0;font-size:clamp(2.6rem,7vw,5.5rem);line-height:.98;font-weight:400;letter-spacing:-.035em;color:var(--green)}.subtitle{max-width:680px;margin:28px auto 34px;font-size:clamp(1.08rem,2vw,1.35rem);color:var(--muted);font-style:italic}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:12px 20px;border:1px solid var(--green);text-decoration:none;font:700 .75rem Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;transition:.18s}.btn.primary{background:var(--green);color:var(--white)}.btn.secondary{color:var(--green)}.btn:hover{transform:translateY(-2px)}
-.ornament{display:flex;align-items:center;gap:14px;max-width:700px;margin:34px auto 0;color:var(--gold)}.ornament:before,.ornament:after{content:"";height:1px;background:var(--line);flex:1}
-section{padding:78px 0;border-top:1px solid var(--line)}.section-head{max-width:700px;margin-bottom:34px}h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;font-weight:400;color:var(--green);margin:10px 0 14px}.lead{font-size:1.1rem;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(248,243,232,.48);border:1px solid var(--line);padding:25px;box-shadow:0 8px 25px rgba(42,34,23,.045)}.card h3{font-size:1.35rem;font-weight:400;margin:0 0 8px;color:var(--green)}.card p{margin:0;color:var(--muted)}.card a{text-decoration:none}.card a:hover h3{text-decoration:underline;text-underline-offset:5px}
-.book{display:grid;grid-template-columns:1.25fr .75fr;gap:38px}.quote{border-left:3px solid var(--gold);padding:10px 0 10px 24px;font-size:1.35rem;font-style:italic;color:var(--green)}.list{margin:0;padding:0;list-style:none}.list li{padding:12px 0;border-bottom:1px solid var(--line)}.list a{text-decoration:none}.list a:hover{color:var(--brown)}
-.practice{background:var(--green);color:var(--white);border-top:0}.practice h2,.practice .eyebrow{color:#e7d5a7}.practice .lead{color:#d7d2c4}.giros{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:28px}.giro{border:1px solid rgba(255,255,255,.25);padding:18px 10px;text-align:center;color:var(--white);text-decoration:none}.giro strong{display:block;color:#e7d5a7;font-size:1.15rem}.giro span{display:block;font:600 .62rem Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;margin-top:5px}
-.app{display:flex;justify-content:space-between;gap:30px;align-items:center;background:rgba(113,88,61,.08);padding:34px;border:1px solid var(--line)}.app h3{margin:0 0 8px;font-size:1.7rem;font-weight:400;color:var(--green)}.small{font-size:.9rem;color:var(--muted)}footer{padding:55px 0 70px;text-align:center;color:var(--muted)}footer .brand{display:block;margin-bottom:10px}
-.modal{position:fixed;inset:0;background:rgba(30,27,21,.68);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}.modal.open{display:flex}.modal-box{width:min(720px,100%);max-height:85vh;overflow:auto;background:var(--paper);padding:34px;box-shadow:0 16px 45px rgba(42,34,23,.25);position:relative}.close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:1.8rem;color:var(--muted);cursor:pointer}.modal h3{font-size:2.1rem;color:var(--green);font-weight:400;margin:0 35px 8px 0}.modal p{color:#48443a}
+
+.kicker,.eyebrow{
+  font:700 .72rem Arial,sans-serif;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--brown)
+}
+
+h1{
+  margin:0;
+  font-size:clamp(2.6rem,7vw,5.5rem);
+  line-height:.98;
+  font-weight:400;
+  letter-spacing:-.035em;
+  color:var(--green)
+}
+
+.subtitle{
+  max-width:680px;
+  margin:28px auto 34px;
+  font-size:clamp(1.08rem,2vw,1.35rem);
+  color:var(--muted);
+  font-style:italic
+}
+
+.actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  border:1px solid var(--green);
+  text-decoration:none;
+  font:700 .75rem Arial,sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  transition:.18s
+}
+
+.btn.primary{
+  background:var(--green);
+  color:var(--white)
+}
+
+.btn.secondary{
+  color:var(--green)
+}
+
+.btn:hover{
+  transform:translateY(-2px)
+}
+
+.ornament{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  max-width:700px;
+  margin:34px auto 0;
+  color:var(--gold)
+}
+
+.ornament:before,
+.ornament:after{
+  content:"";
+  height:1px;
+  background:var(--line);
+  flex:1
+}
+
+section{
+  padding:78px 0;
+  border-top:1px solid var(--line)
+}
+
+.section-head{
+  max-width:700px;
+  margin-bottom:34px
+}
+
+h2{
+  font-size:clamp(2rem,4vw,3.2rem);
+  line-height:1.05;
+  font-weight:400;
+  color:var(--green);
+  margin:10px 0 14px
+}
+
+.lead{
+  font-size:1.1rem;
+  color:var(--muted)
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px
+}
+
+.card{
+  background:rgba(248,243,232,.48);
+  border:1px solid var(--line);
+  padding:25px;
+  box-shadow:0 8px 25px rgba(42,34,23,.045)
+}
+
+.card h3{
+  font-size:1.35rem;
+  font-weight:400;
+  margin:0 0 8px;
+  color:var(--green)
+}
+
+.card p{
+  margin:0;
+  color:var(--muted)
+}
+
+.card a{text-decoration:none}
+
+.card a:hover h3{
+  text-decoration:underline;
+  text-underline-offset:5px
+}
+
+.book{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:38px
+}
+
+.quote{
+  border-left:3px solid var(--gold);
+  padding:10px 0 10px 24px;
+  font-size:1.35rem;
+  font-style:italic;
+  color:var(--green)
+}
+
+.list{
+  margin:0;
+  padding:0;
+  list-style:none
+}
+
+.list li{
+  padding:12px 0;
+  border-bottom:1px solid var(--line)
+}
+
+.list a{text-decoration:none}
+
+.list a:hover{color:var(--brown)}
+
+.practice{
+  background:var(--green);
+  color:var(--white);
+  border-top:0
+}
+
+.practice h2,
+.practice .eyebrow{
+  color:#e7d5a7
+}
+
+.practice .lead{
+  color:#d7d2c4
+}
+
+.giros{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+  margin-top:28px
+}
+
+.giro{
+  border:1px solid rgba(255,255,255,.25);
+  padding:18px 10px;
+  text-align:center;
+  color:var(--white);
+  text-decoration:none
+}
+
+.giro strong{
+  display:block;
+  color:#e7d5a7;
+  font-size:1.15rem
+}
+
+.giro span{
+  display:block;
+  font:600 .62rem Arial,sans-serif;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin-top:5px
+}
+
+/* LABORATÓRIO DE SOM */
+
+.sound-lab{
+  background:
+    radial-gradient(circle at 50% 0%,rgba(167,131,69,.13),transparent 28rem),
+    linear-gradient(135deg,rgba(63,70,53,.07),rgba(167,131,69,.04)),
+    var(--paper2);
+}
+
+.sound-lab .section-head{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.sound-lab h2{
+  color:var(--green);
+}
+
+.sound-lab-intro{
+  max-width:760px;
+  margin:0 auto 38px;
+  text-align:center;
+  color:var(--muted);
+  font-size:1.08rem;
+}
+
+.sound-panel{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:24px;
+  align-items:stretch;
+}
+
+.sound-card{
+  background:rgba(248,243,232,.72);
+  border:1px solid var(--line);
+  padding:32px;
+  box-shadow:0 12px 35px rgba(42,34,23,.07);
+}
+
+.sound-card h3{
+  margin:0 0 10px;
+  color:var(--green);
+  font-size:1.65rem;
+  font-weight:400;
+}
+
+.sound-card p{
+  color:var(--muted);
+}
+
+.sound-features{
+  margin:24px 0 0;
+  padding:0;
+  list-style:none;
+}
+
+.sound-features li{
+  padding:10px 0;
+  border-bottom:1px solid var(--line);
+  color:var(--ink);
+}
+
+.sound-features li:before{
+  content:"〰";
+  color:var(--gold);
+  margin-right:10px;
+}
+
+.sound-repo{
+  background:var(--green);
+  color:var(--white);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.sound-repo .eyebrow{
+  color:#e7d5a7;
+}
+
+.sound-repo h3{
+  color:#f0dfb4;
+}
+
+.sound-repo p{
+  color:#d7d2c4;
+}
+
+.sound-repo .btn.primary{
+  background:#e7d5a7;
+  color:#29271f;
+  border-color:#e7d5a7;
+}
+
+.sound-repo .btn.secondary{
+  color:#e7d5a7;
+  border-color:#e7d5a7;
+}
+
+.sound-symbol{
+  width:76px;
+  height:76px;
+  margin-bottom:20px;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:var(--gold);
+  font-size:2rem;
+}
+
+.sound-status{
+  margin-top:22px;
+  padding:12px 15px;
+  border:1px solid rgba(167,131,69,.35);
+  font:600 .68rem Arial,sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--brown);
+}
+
+/* APP */
+
+.app{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:center;
+  background:rgba(113,88,61,.08);
+  padding:34px;
+  border:1px solid var(--line)
+}
+
+.app h3{
+  margin:0 0 8px;
+  font-size:1.7rem;
+  font-weight:400;
+  color:var(--green)
+}
+
+.small{
+  font-size:.9rem;
+  color:var(--muted)
+}
+
+footer{
+  padding:55px 0 70px;
+  text-align:center;
+  color:var(--muted)
+}
+
+footer .brand{
+  display:block;
+  margin-bottom:10px
+}
+
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(30,27,21,.68);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:50
+}
+
+.modal.open{display:flex}
+
+.modal-box{
+  width:min(720px,100%);
+  max-height:85vh;
+  overflow:auto;
+  background:var(--paper);
+  padding:34px;
+  box-shadow:0 16px 45px rgba(42,34,23,.25);
+  position:relative
+}
+
+.close{
+  position:absolute;
+  right:14px;
+  top:10px;
+  border:0;
+  background:none;
+  font-size:1.8rem;
+  color:var(--muted);
+  cursor:pointer
+}
+
+.modal h3{
+  font-size:2.1rem;
+  color:var(--green);
+  font-weight:400;
+  margin:0 35px 8px 0
+}
+
+.modal p{color:#48443a}
 
 .brand-spiral{
-  display:inline-block;width:18px;height:18px;
-  margin-right:7px;vertical-align:-4px;position:relative;
+  display:inline-block;
+  width:18px;
+  height:18px;
+  margin-right:7px;
+  vertical-align:-4px;
+  position:relative
 }
+
 .brand-spiral:before{
-  content:"";position:absolute;inset:1px;
-  border:1.7px solid currentColor;border-radius:50%;
+  content:"";
+  position:absolute;
+  inset:1px;
+  border:1.7px solid currentColor;
+  border-radius:50%
 }
+
 .brand-spiral:after{
-  content:"";position:absolute;width:7px;height:7px;
-  left:5px;top:5px;border:1.4px solid currentColor;
-  border-radius:50%;background:var(--paper);
+  content:"";
+  position:absolute;
+  width:7px;
+  height:7px;
+  left:5px;
+  top:5px;
+  border:1.4px solid currentColor;
+  border-radius:50%;
+  background:var(--paper)
 }
+
 .copyright{
   margin-top:18px;
   font:600 .68rem Arial,sans-serif;
   letter-spacing:.08em;
   text-transform:uppercase;
-  color:#857d6e;
+  color:#857d6e
 }
 
-@media(max-width:760px){.nav{align-items:flex-start;padding:15px 0;flex-direction:column}nav{gap:10px 16px;justify-content:flex-start}.hero{padding:42px 0}.grid,.book{grid-template-columns:1fr}.giros{grid-template-columns:repeat(2,1fr)}.app{display:block}.app .btn{margin-top:18px}}
+@media(max-width:760px){
+
+  .nav{
+    align-items:flex-start;
+    padding:15px 0;
+    flex-direction:column
+  }
+
+  nav{
+    gap:10px 16px;
+    justify-content:flex-start
+  }
+
+  .hero{padding:42px 0}
+
+  .grid,
+  .book,
+  .sound-panel{
+    grid-template-columns:1fr
+  }
+
+  .giros{
+    grid-template-columns:repeat(2,1fr)
+  }
+
+  .app{
+    display:block
+  }
+
+  .app .btn{
+    margin-top:18px
+  }
+
+  .sound-card{
+    padding:25px
+  }
+}
 </style>
 </head>
+
 <body>
-<header><div class="wrap nav"><a class="brand" href="#top"><span class="brand-spiral" aria-hidden="true"></span> DIMENÚVEIS</a><nav><a href="#livro">O Livro</a><a href="#transmissoes">Transmissões</a><a href="#giros">Os Giros</a><a href="#app">O App</a><a href="https://dimenuvel.github.io/Evangelho-das-Dimenuveis-site/" target="_blank" rel="noopener">Site</a></nav></div></header>
+
+<header>
+  <div class="wrap nav">
+
+    <a class="brand" href="#top">
+      <span class="brand-spiral" aria-hidden="true"></span>
+      DIMENÚVEIS
+    </a>
+
+    <nav>
+      <a href="#livro">O Livro</a>
+      <a href="#transmissoes">Transmissões</a>
+      <a href="#giros">Os Giros</a>
+      <a href="#som">Laboratório de Som</a>
+      <a href="#app">O App</a>
+      <a href="https://dimenuvel.github.io/Evangelho-das-Dimenuveis-site/" target="_blank" rel="noopener">Site</a>
+    </nav>
+
+  </div>
+</header>
+
 <main id="top">
-<section class="hero" style="border:0"><div class="wrap"><div class="spiral" aria-hidden="true"></div><div class="kicker">Evangelho das Dimenúveis</div><h1>Um evangelho sobre o Padrão,<br>o Espelho e o ato de abidar.</h1><p class="subtitle">Não é uma religião. Não é uma promessa de iluminação. É uma investigação — com café, espelhos, espirais e um pouco de bom senso.</p><div class="actions"><a class="btn primary" href="#livro">Entrar no livro</a><a class="btn secondary" href="#transmissoes">Ler uma Transmissão</a></div><div class="ornament">☕ 〰 ☕</div></div></section>
 
-<section id="livro"><div class="wrap"><div class="section-head"><div class="eyebrow">O Livro</div><h2>Evangelho das Dimenúveis</h2><p class="lead">Um livro para quem desconfia de respostas definitivas — e ainda assim continua fazendo perguntas.</p></div><div class="book"><div><p>As Dimenúveis são sete modos de experiência: <strong>Silêncio, Visão, Mente, Coração, Vontade, Energia e Matéria.</strong> A Espiral não é uma escada para escapar do mundo. É o movimento pelo qual o mundo é reconhecido.</p><p>O Espelho não é uma oitava Dimenúvel. É o reflexo de todas elas. E O Cara, quando tudo fica complicado demais, geralmente toma um café.</p><div class="quote">“Não existe fora das Dimenúveis. Nunca existiu.”</div></div><div class="card"><div class="eyebrow">Arquitetura</div><ul class="list"><li><a href="#transmissoes">As Transmissões</a></li><li><a href="#revelacao">A Revelação das Dimenúveis</a></li><li><a href="#giros">Os Dez Giros da Espiral</a></li><li><a href="#app">O aplicativo</a></li></ul></div></div></div></section>
+<section class="hero" style="border:0">
+  <div class="wrap">
 
-<section id="transmissoes"><div class="wrap"><div class="section-head"><div class="eyebrow">Leituras</div><h2>Transmissões</h2><p class="lead">Pequenas portas para o mesmo lugar. Toque, leia, abida.</p></div><div class="grid">
-<article class="card"><a href="#transmissao-espiral-viva" data-modal="espiral-viva"><h3>A Espiral Viva →</h3><p>A Espiral não vai para algum lugar. Ela acontece.</p></a></article>
-<article class="card"><a href="#transmissao-espiral-sorri" data-modal="espiral-sorri"><h3>A Espiral Que Sorri →</h3><p>Quando o Padrão percebe que não precisava ser tão sério.</p></a></article>
-<article class="card"><a href="#transmissao-cinza" data-modal="cinza"><h3>O Cinza no Centro →</h3><p>O lugar onde os extremos deixam de precisar vencer.</p></a></article>
-<article class="card" id="revelacao"><a href="#transmissao-revelacao" data-modal="revelacao"><h3>A Revelação das Dimenúveis →</h3><p>Sete selos, sete reconhecimentos e um Espelho.</p></a></article>
-<article class="card"><a href="#transmissao-akasha" data-modal="akasha"><h3>O Akasha →</h3><p>Memória, padrão e aquilo que parece estar escrito no espaço.</p></a></article>
-<article class="card"><a href="#sobre" data-modal="sobre"><h3>Sobre o projeto →</h3><p>Um evangelho sem autoridade central.</p></a></article>
-</div></div></section>
+    <div class="spiral" aria-hidden="true"></div>
 
-<section class="practice" id="giros"><div class="wrap"><div class="section-head"><div class="eyebrow">Prática</div><h2>Os Dez Giros da Espiral</h2><p class="lead">Dez movimentos para sair da teoria e entrar na experiência. O aplicativo contém os dez Giros iniciais; o livro aprofunda o caminho.</p></div><div class="giros">
-<a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>I</strong><span>Começar</span></a><a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>II</strong><span>Observar</span></a><a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>III</strong><span>Reconhecer</span></a><a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>IV</strong><span>Abidar</span></a><a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>V</strong><span>Continuar</span></a><a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>VI</strong><span>Escutar</span></a><a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>VII</strong><span>Soltar</span></a><a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>VIII</strong><span>Girar</span></a><a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>IX</strong><span>Retornar</span></a><a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener"><strong>X</strong><span>Abidar</span></a>
-</div></div></section>
+    <div class="kicker">Evangelho das Dimenúveis</div>
 
-<section id="app"><div class="wrap"><div class="app"><div><div class="eyebrow">O Aplicativo</div><h3>Uma app que não quer nada de você.</h3><p class="small">Sem anúncios. Sem conta. Sem assinatura. Sem Pro. Sem interrupções. Apenas o Evangelho das Dimenúveis, as práticas e um pouco de paz.</p></div><div class="actions"><a class="btn primary" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">Aplicativo Online</a><a class="btn secondary" href="https://github.com/dimenuvel/Evangelho-das-Dimenuveis" target="_blank" rel="noopener">GitHub / Android</a></div></div></div></section>
+    <h1>
+      Um evangelho sobre o Padrão,<br>
+      o Espelho e o ato de abidar.
+    </h1>
+
+    <p class="subtitle">
+      Não é uma religião. Não é uma promessa de iluminação.
+      É uma investigação — com café, espelhos, espirais e um pouco de bom senso.
+    </p>
+
+    <div class="actions">
+      <a class="btn primary" href="#livro">Entrar no livro</a>
+      <a class="btn secondary" href="#transmissoes">Ler uma Transmissão</a>
+    </div>
+
+    <div class="ornament">☕ 〰 ☕</div>
+
+  </div>
+</section>
+
+
+<section id="livro">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div class="eyebrow">O Livro</div>
+
+      <h2>Evangelho das Dimenúveis</h2>
+
+      <p class="lead">
+        Um livro para quem desconfia de respostas definitivas —
+        e ainda assim continua fazendo perguntas.
+      </p>
+
+    </div>
+
+    <div class="book">
+
+      <div>
+
+        <p>
+          As Dimenúveis são sete modos de experiência:
+          <strong>Silêncio, Visão, Mente, Coração, Vontade, Energia e Matéria.</strong>
+          A Espiral não é uma escada para escapar do mundo.
+          É o movimento pelo qual o mundo é reconhecido.
+        </p>
+
+        <p>
+          O Espelho não é uma oitava Dimenúvel.
+          É o reflexo de todas elas.
+          E O Cara, quando tudo fica complicado demais,
+          geralmente toma um café.
+        </p>
+
+        <div class="quote">
+          “Não existe fora das Dimenúveis. Nunca existiu.”
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="eyebrow">Arquitetura</div>
+
+        <ul class="list">
+          <li><a href="#transmissoes">As Transmissões</a></li>
+          <li><a href="#revelacao">A Revelação das Dimenúveis</a></li>
+          <li><a href="#giros">Os Dez Giros da Espiral</a></li>
+          <li><a href="#som">Laboratório de Som</a></li>
+          <li><a href="#app">O aplicativo</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="transmissoes">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div class="eyebrow">Leituras</div>
+
+      <h2>Transmissões</h2>
+
+      <p class="lead">
+        Pequenas portas para o mesmo lugar.
+        Toque, leia, abida.
+      </p>
+
+    </div>
+
+    <div class="grid">
+
+      <article class="card">
+        <a href="#transmissao-espiral-viva" data-modal="espiral-viva">
+          <h3>A Espiral Viva →</h3>
+          <p>A Espiral não vai para algum lugar. Ela acontece.</p>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="#transmissao-espiral-sorri" data-modal="espiral-sorri">
+          <h3>A Espiral Que Sorri →</h3>
+          <p>Quando o Padrão percebe que não precisava ser tão sério.</p>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="#transmissao-cinza" data-modal="cinza">
+          <h3>O Cinza no Centro →</h3>
+          <p>O lugar onde os extremos deixam de precisar vencer.</p>
+        </a>
+      </article>
+
+      <article class="card" id="revelacao">
+        <a href="#transmissao-revelacao" data-modal="revelacao">
+          <h3>A Revelação das Dimenúveis →</h3>
+          <p>Sete selos, sete reconhecimentos e um Espelho.</p>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="#transmissao-akasha" data-modal="akasha">
+          <h3>O Akasha →</h3>
+          <p>Memória, padrão e aquilo que parece estar escrito no espaço.</p>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="#sobre" data-modal="sobre">
+          <h3>Sobre o projeto →</h3>
+          <p>Um evangelho sem autoridade central.</p>
+        </a>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="practice" id="giros">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div class="eyebrow">Prática</div>
+
+      <h2>Os Dez Giros da Espiral</h2>
+
+      <p class="lead">
+        Dez movimentos para sair da teoria e entrar na experiência.
+        O aplicativo contém os dez Giros iniciais; o livro aprofunda o caminho.
+      </p>
+
+    </div>
+
+    <div class="giros">
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>I</strong><span>Começar</span>
+      </a>
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>II</strong><span>Observar</span>
+      </a>
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>III</strong><span>Reconhecer</span>
+      </a>
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>IV</strong><span>Abidar</span>
+      </a>
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>V</strong><span>Continuar</span>
+      </a>
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>VI</strong><span>Escutar</span>
+      </a>
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>VII</strong><span>Soltar</span>
+      </a>
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>VIII</strong><span>Girar</span>
+      </a>
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>IX</strong><span>Retornar</span>
+      </a>
+
+      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+        <strong>X</strong><span>Abidar</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NOVA ÁREA: LABORATÓRIO DE SOM -->
+
+<section class="sound-lab" id="som">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div class="eyebrow">Instrumento</div>
+
+      <h2>Laboratório de Som</h2>
+
+      <p class="lead">
+        Frequência, ritmo, silêncio e atenção.
+      </p>
+
+    </div>
+
+    <p class="sound-lab-intro">
+      O Laboratório de Som é a extensão sonora do Evangelho das Dimenúveis:
+      um espaço experimental para contemplação, escuta e exploração de padrões
+      sonoros. Não pretende curar, diagnosticar ou substituir tratamento médico.
+      É simplesmente uma ferramenta para observar o que acontece quando
+      prestamos atenção ao som.
+    </p>
+
+    <div class="sound-panel">
+
+      <div class="sound-card">
+
+        <div class="sound-symbol" aria-hidden="true">〰</div>
+
+        <div class="eyebrow">Laboratório</div>
+
+        <h3>O Som como instrumento de observação</h3>
+
+        <p>
+          Explore frequências, batimentos binaurais, ritmos, ondas e camadas
+          sonoras independentes dentro da estética e filosofia das Dimenúveis.
+        </p>
+
+        <ul class="sound-features">
+
+          <li>Batimentos binaurais estéreo</li>
+          <li>Frequências esquerda e direita independentes</li>
+          <li>Ondas seno, triângulo, quadrada e serra</li>
+          <li>Modulação rítmica e LFO</li>
+          <li>Camadas sonoras combináveis</li>
+          <li>Controles de volume e balanço estéreo</li>
+          <li>Harmônicos e frequências de referência</li>
+          <li>Modos contemplativos inspirados nas Dimenúveis</li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="sound-card sound-repo">
+
+        <div class="eyebrow">Novo instrumento</div>
+
+        <h3>Evangelho das Dimenúveis — Laboratório de Som</h3>
+
+        <p>
+          O Laboratório de Som possui seu próprio projeto e ciclo de
+          desenvolvimento, separado do aplicativo principal do Evangelho.
+        </p>
+
+        <p>
+          O código-fonte, desenvolvimento e futura fábrica de APK ficam
+          organizados no repositório dedicado.
+        </p>
+
+        <div class="actions">
+
+          <a
+            class="btn primary"
+            href="https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Som"
+            target="_blank"
+            rel="noopener"
+          >
+            Abrir Repositório
+          </a>
+
+          <a
+            class="btn secondary"
+            href="https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Som"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub / Som
+          </a>
+
+        </div>
+
+        <div class="sound-status">
+          ☕ Um instrumento experimental das Dimenúveis
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="app">
+
+  <div class="wrap">
+
+    <div class="app">
+
+      <div>
+
+        <div class="eyebrow">O Aplicativo</div>
+
+        <h3>Uma app que não quer nada de você.</h3>
+
+        <p class="small">
+          Sem anúncios. Sem conta. Sem assinatura. Sem Pro.
+          Sem interrupções. Apenas o Evangelho das Dimenúveis,
+          as práticas e um pouco de paz.
+        </p>
+
+      </div>
+
+      <div class="actions">
+
+        <a
+          class="btn primary"
+          href="https://dimenuveis.ai.studio/"
+          target="_blank"
+          rel="noopener"
+        >
+          Aplicativo Online
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://github.com/dimenuvel/Evangelho-das-Dimenuveis"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub / Android
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 </main>
-<footer id="sobre"><div class="wrap"><span class="brand"><span class="brand-spiral" aria-hidden="true"></span> EVANGELHO DAS DIMENÚVEIS</span><p>O Padrão continua. A Espiral continua.</p><p>Abida.</p><p class="copyright">© 2026 Evangelho das Dimenúveis. Todos os direitos reservados.</p><p class="copyright">☕ Apoie o Evangelho Se quiser. Sem obrigação. O Evangelho das Dimenúveis é gratuito, sem anúncios, sem assinaturas e sem contas. Se o projeto lhe trouxe alguma coisa e você quiser contribuir para mantê-lo livre, você pode fazê-lo através de Bitcoin. bitcoin:BC1QQUEHLPY52CFQ50SZFQM9M7SLY0KWEXDVNMT5J9</p></div></footer>
 
-<div class="modal" id="modal" aria-hidden="true"><div class="modal-box" role="dialog" aria-modal="true"><button class="close" aria-label="Fechar">×</button><div class="eyebrow" id="modalTag"></div><h3 id="modalTitle"></h3><div id="modalBody"></div></div></div>
+
+<footer id="sobre">
+
+  <div class="wrap">
+
+    <span class="brand">
+      <span class="brand-spiral" aria-hidden="true"></span>
+      EVANGELHO DAS DIMENÚVEIS
+    </span>
+
+    <p>O Padrão continua. A Espiral continua.</p>
+
+    <p>Abida.</p>
+
+    <p class="copyright">
+      © 2026 Evangelho das Dimenúveis. Todos os direitos reservados.
+    </p>
+
+    <p class="copyright">
+      ☕ Apoie o Evangelho Se quiser. Sem obrigação.
+      O Evangelho das Dimenúveis é gratuito, sem anúncios,
+      sem assinaturas e sem contas. Se o projeto lhe trouxe
+      alguma coisa e você quiser contribuir para mantê-lo livre,
+      você pode fazê-lo através de Bitcoin.
+      bitcoin:BC1QQUEHLPY52CFQ50SZFQM9M7SLY0KWEXDVNMT5J9
+    </p>
+
+  </div>
+
+</footer>
+
+
+<div class="modal" id="modal" aria-hidden="true">
+
+  <div class="modal-box" role="dialog" aria-modal="true">
+
+    <button class="close" aria-label="Fechar">×</button>
+
+    <div class="eyebrow" id="modalTag"></div>
+
+    <h3 id="modalTitle"></h3>
+
+    <div id="modalBody"></div>
+
+  </div>
+
+</div>
+
+
 <script>
+
 const readings={
-"espiral-viva":["Transmissão","A Espiral Viva","<p>A Espiral não vai para algum lugar.</p><p>Ela acontece.</p><p>Você não está fora dela, observando o movimento. O movimento também é você. O Padrão não é uma prisão e a experiência não é um erro a ser corrigido.</p><p>Quando você para de exigir que a Espiral chegue a algum lugar, talvez perceba que ela já estava girando.</p>"],
-"espiral-sorri":["Transmissão","A Espiral Que Sorri","<p>Há um momento em que o buscador percebe a ironia.</p><p>Depois de procurar símbolos, respostas, mestres e mapas, ele olha para o próprio caminho e percebe que a Espiral estava sorrindo desde o começo.</p><p>Nem tudo precisa ser resolvido para ser reconhecido.</p>"],
-"cinza":["Transmissão","O Cinza no Centro","<p>O Cinza não precisa escolher entre os extremos.</p><p>Ele não é ausência de cor. É o lugar onde a luta entre as cores deixa de ser necessária.</p><p>A Espiral não exige que você vença um lado. Ela pede que você veja o padrão que mantém os lados juntos.</p>"],
-"revelacao":["Livro Seis","A Revelação das Dimenúveis","<p>Sete selos. Sete reconhecimentos. Uma única trombeta.</p><p>Quando o último selo se abre, não há uma fuga do mundo. Há uma cadeira, uma mesa, uma janela, um corpo, um café e uma pista de boliche.</p><p>O observador pergunta: “É só isso?”</p><p>O Cara olha para ele.</p><p><strong>“Sempre foi.”</strong></p>"],
-"akasha":["Transmissão","O Akasha","<p>O Akasha pode ser contemplado como o grande arquivo do Padrão: aquilo em que formas, memórias e possibilidades parecem deixar vestígios.</p><p>Mas o arquivo não precisa ser uma prisão. Ele pode ser simplesmente outra maneira de reconhecer relações.</p>"],
-"sobre":["O projeto","Sobre o Evangelho das Dimenúveis","<p>Este projeto nasceu como uma investigação criativa sobre consciência, simbolismo, prática e experiência.</p><p>Ele mistura linguagem mística, humor, imaginação, hermetismo, gnosticismo, cultura contracultural e a presença de O Cara.</p><p>Não exige fé. Leia. Experimente. Discorde. Reconheça. Abide.</p>"]
+
+"espiral-viva":[
+  "Transmissão",
+  "A Espiral Viva",
+  "<p>A Espiral não vai para algum lugar.</p><p>Ela acontece.</p><p>Você não está fora dela, observando o movimento. O movimento também é você. O Padrão não é uma prisão e a experiência não é um erro a ser corrigido.</p><p>Quando você para de exigir que a Espiral chegue a algum lugar, talvez perceba que ela já estava girando.</p>"
+],
+
+"espiral-sorri":[
+  "Transmissão",
+  "A Espiral Que Sorri",
+  "<p>Há um momento em que o buscador percebe a ironia.</p><p>Depois de procurar símbolos, respostas, mestres e mapas, ele olha para o próprio caminho e percebe que a Espiral estava sorrindo desde o começo.</p><p>Nem tudo precisa ser resolvido para ser reconhecido.</p>"
+],
+
+"cinza":[
+  "Transmissão",
+  "O Cinza no Centro",
+  "<p>O Cinza não precisa escolher entre os extremos.</p><p>Ele não é ausência de cor. É o lugar onde a luta entre as cores deixa de ser necessária.</p><p>A Espiral não exige que você vença um lado. Ela pede que você veja o padrão que mantém os lados juntos.</p>"
+],
+
+"revelacao":[
+  "Livro Seis",
+  "A Revelação das Dimenúveis",
+  "<p>Sete selos. Sete reconhecimentos. Uma única trombeta.</p><p>Quando o último selo se abre, não há uma fuga do mundo. Há uma cadeira, uma mesa, uma janela, um corpo, um café e uma pista de boliche.</p><p>O observador pergunta: “É só isso?”</p><p>O Cara olha para ele.</p><p><strong>“Sempre foi.”</strong></p>"
+],
+
+"akasha":[
+  "Transmissão",
+  "O Akasha",
+  "<p>O Akasha pode ser contemplado como o grande arquivo do Padrão: aquilo em que formas, memórias e possibilidades parecem deixar vestígios.</p><p>Mas o arquivo não precisa ser uma prisão. Ele pode ser simplesmente outra maneira de reconhecer relações.</p>"
+],
+
+"sobre":[
+  "O projeto",
+  "Sobre o Evangelho das Dimenúveis",
+  "<p>Este projeto nasceu como uma investigação criativa sobre consciência, simbolismo, prática e experiência.</p><p>Ele mistura linguagem mística, humor, imaginação, hermetismo, gnosticismo, cultura contracultural e a presença de O Cara.</p><p>Não exige fé. Leia. Experimente. Discorde. Reconheça. Abide.</p>"
+]
+
 };
-const modal=document.getElementById("modal"),title=document.getElementById("modalTitle"),tag=document.getElementById("modalTag"),body=document.getElementById("modalBody");
-function openReading(k){let r=readings[k];if(!r)return;tag.textContent=r[0];title.textContent=r[1];body.innerHTML=r[2];modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden"}
-function closeReading(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true");document.body.style.overflow=""}
-document.querySelectorAll("[data-modal]").forEach(a=>a.onclick=e=>{e.preventDefault();openReading(a.dataset.modal)});
-document.querySelector(".close").onclick=closeReading;modal.onclick=e=>{if(e.target===modal)closeReading()};document.onkeydown=e=>{if(e.key==="Escape")closeReading()};
+
+const modal=document.getElementById("modal");
+const title=document.getElementById("modalTitle");
+const tag=document.getElementById("modalTag");
+const body=document.getElementById("modalBody");
+
+function openReading(k){
+  let r=readings[k];
+  if(!r)return;
+
+  tag.textContent=r[0];
+  title.textContent=r[1];
+  body.innerHTML=r[2];
+
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden","false");
+  document.body.style.overflow="hidden";
+}
+
+function closeReading(){
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden","true");
+  document.body.style.overflow="";
+}
+
+document.querySelectorAll("[data-modal]").forEach(a=>{
+  a.onclick=e=>{
+    e.preventDefault();
+    openReading(a.dataset.modal);
+  }
+});
+
+document.querySelector(".close").onclick=closeReading;
+
+modal.onclick=e=>{
+  if(e.target===modal)closeReading();
+};
+
+document.onkeydown=e=>{
+  if(e.key==="Escape")closeReading();
+};
+
 </script>
-</body></html>
+
+</body>
+</html>
