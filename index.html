@@ -303,7 +303,17 @@ h2{
   padding:18px 10px;
   text-align:center;
   color:var(--white);
-  text-decoration:none
+  text-decoration:none;
+  cursor:pointer;
+  font:inherit;
+  width:100%;
+  background:transparent;
+  transition:.18s
+}
+
+.giro:hover{
+  background:rgba(255,255,255,.08);
+  transform:translateY(-2px)
 }
 
 .giro strong{
@@ -489,6 +499,28 @@ h2{
   font-size:.88rem;
 }
 
+/* TAROT INSIDE MAIN APP */
+
+.native-tarot{
+  margin-top:16px;
+  padding:18px 20px;
+  border-left:3px solid var(--gold);
+  background:rgba(63,70,53,.07);
+}
+
+.native-tarot strong{
+  display:block;
+  margin-bottom:5px;
+  color:var(--green);
+  font-size:1rem;
+}
+
+.native-tarot span{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+}
+
 footer{
   padding:55px 0 70px;
   text-align:center;
@@ -542,6 +574,15 @@ footer .brand{
 }
 
 .modal p{color:#48443a}
+
+.modal ul{
+  color:#48443a;
+  padding-left:22px
+}
+
+.modal li{
+  margin:6px 0
+}
 
 .brand-spiral{
   display:inline-block;
@@ -821,45 +862,45 @@ footer .brand{
 
     <div class="giros">
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-1">
         <strong>I</strong><span>Começar</span>
-      </a>
+      </button>
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-2">
         <strong>II</strong><span>Observar</span>
-      </a>
+      </button>
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-3">
         <strong>III</strong><span>Reconhecer</span>
-      </a>
+      </button>
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-4">
         <strong>IV</strong><span>Abidar</span>
-      </a>
+      </button>
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-5">
         <strong>V</strong><span>Continuar</span>
-      </a>
+      </button>
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-6">
         <strong>VI</strong><span>Escutar</span>
-      </a>
+      </button>
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-7">
         <strong>VII</strong><span>Soltar</span>
-      </a>
+      </button>
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-8">
         <strong>VIII</strong><span>Girar</span>
-      </a>
+      </button>
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-9">
         <strong>IX</strong><span>Retornar</span>
-      </a>
+      </button>
 
-      <a class="giro" href="https://dimenuveis.ai.studio/" target="_blank" rel="noopener">
+      <button class="giro" type="button" data-modal="giro-10">
         <strong>X</strong><span>Abidar</span>
-      </a>
+      </button>
 
     </div>
 
@@ -1000,6 +1041,19 @@ footer .brand{
 
         </div>
 
+        <div class="native-tarot">
+
+          <strong>✦ Leituras de Tarô integradas</strong>
+
+          <span>
+            A versão nativa do aplicativo também possui um sistema de
+            leitura do Tarô dos Dimenúveis, permitindo realizar leituras
+            diretamente dentro do Evangelho e explorar os símbolos e
+            arquétipos do baralho como parte da experiência.
+          </span>
+
+        </div>
+
       </div>
 
       <div class="actions">
@@ -1119,6 +1173,69 @@ const readings={
   "O projeto",
   "Sobre o Evangelho das Dimenúveis",
   "<p>Este projeto nasceu como uma investigação criativa sobre consciência, simbolismo, prática e experiência.</p><p>Ele mistura linguagem mística, humor, imaginação, hermetismo, gnosticismo, cultura contracultural e a presença de O Cara.</p><p>Não exige fé. Leia. Experimente. Discorde. Reconheça. Abide.</p>"
+],
+
+
+/* OS DEZ GIROS DA ESPIRAL */
+
+"giro-1":[
+  "Giro I",
+  "O Espelho da Mente",
+  "<p>O primeiro Giro começa pela observação daquilo que normalmente passa despercebido: os próprios pensamentos.</p><p>Em vez de tentar controlar a mente imediatamente, observe seus padrões, repetições, julgamentos e distrações.</p><p><strong>Prática:</strong> observar o pensamento sem precisar obedecê-lo.</p>"
+],
+
+"giro-2":[
+  "Giro II",
+  "A Vontade que Escolhe",
+  "<p>Depois de observar a mente, surge a possibilidade de escolher.</p><p>Este Giro trabalha a diferença entre impulso e vontade consciente. A prática é reconhecer onde você reage automaticamente e onde pode realmente escolher.</p><p><strong>Prática:</strong> escolher uma ação simples e realizá-la deliberadamente.</p>"
+],
+
+"giro-3":[
+  "Giro III",
+  "O Fluxo da Energia",
+  "<p>A energia é percebida como movimento: tensão, relaxamento, respiração, atenção e presença corporal.</p><p>O objetivo não é criar uma experiência extraordinária, mas perceber como a energia muda quando a atenção muda.</p><p><strong>Prática:</strong> observar a respiração e as sensações do corpo sem interferir.</p>"
+],
+
+"giro-4":[
+  "Giro IV",
+  "O Equilíbrio dos Elementos",
+  "<p>O quarto Giro introduz o equilíbrio entre as forças que compõem a experiência: terra, água, fogo e ar.</p><p>Em vez de tratar os elementos apenas como símbolos externos, observe suas qualidades dentro de você: estabilidade, fluxo, impulso e movimento.</p><p><strong>Prática:</strong> reconhecer qual qualidade está predominando e qual precisa de equilíbrio.</p>"
+],
+
+"giro-5":[
+  "Giro V",
+  "O Espelho Profundo",
+  "<p>O Espelho agora deixa de mostrar apenas pensamentos e começa a revelar padrões mais profundos.</p><p>Observe aquilo que você repete sem perceber: emoções, hábitos, histórias e maneiras de interpretar o mundo.</p><p><strong>Prática:</strong> reconhecer um padrão recorrente sem transformá-lo imediatamente em identidade.</p>"
+],
+
+"giro-6":[
+  "Giro VI",
+  "O Akasha",
+  "<p>O Akasha é contemplado como o campo onde padrões, memórias e possibilidades parecem deixar seus vestígios.</p><p>Este Giro convida à escuta daquilo que existe entre as coisas: memória, silêncio, associação e significado.</p><p><strong>Prática:</strong> permanecer em silêncio e observar as relações que surgem sem forçá-las.</p>"
+],
+
+"giro-7":[
+  "Giro VII",
+  "Os Olhos por Trás dos Olhos",
+  "<p>A atenção volta-se para o próprio ato de perceber.</p><p>Quem está observando? O que muda quando você percebe que também pode observar o observador?</p><p><strong>Prática:</strong> perceber pensamentos, sensações e imagens como objetos da consciência, sem se confundir completamente com eles.</p>"
+],
+
+"giro-8":[
+  "Giro VIII",
+  "A Viagem sem Sair do Lugar",
+  "<p>Nem toda viagem exige movimento.</p><p>Este Giro explora estados internos de atenção, imaginação e consciência enquanto o corpo permanece exatamente onde está.</p><p><strong>Prática:</strong> permanecer fisicamente imóvel enquanto permite que a atenção percorra diferentes paisagens internas.</p>"
+],
+
+"giro-9":[
+  "Giro IX",
+  "A Porta Entre as Camadas",
+  "<p>Aquilo que parecia separado começa a ser percebido como parte de um mesmo movimento.</p><p>A Porta não é uma fuga para outra realidade. É o reconhecimento da passagem entre diferentes modos de perceber a mesma realidade.</p><p><strong>Prática:</strong> observar a mudança entre estados de atenção sem tentar agarrar nenhum deles.</p>"
+],
+
+"giro-10":[
+  "Giro X",
+  "O Retorno ao Centro",
+  "<p>O último Giro não termina a Espiral. Ele retorna ao centro.</p><p>Depois de observar, escolher, sentir, equilibrar, reconhecer, escutar, perceber, viajar e atravessar, resta aquilo que sempre esteve presente.</p><p>Não há prêmio secreto. Não há fuga. Não há necessidade de chegar a algum lugar.</p><p><strong>Prática:</strong> retornar ao momento presente e simplesmente abidar.</p>"
 ]
 
 };
