@@ -1,6 +1,4 @@
-from pathlib import Path
-
-readme = """# Evangelho das Dimenúveis — Landing Page
+# Evangelho das Dimenúveis — Landing Page
 
 Landing page oficial do **Evangelho das Dimenúveis**, reunindo o livro, as Transmissões, os Dez Giros da Espiral, o aplicativo principal e o Laboratório de Som.
 
