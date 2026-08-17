@@ -3,6 +3,12 @@
 Landing page oficial do **Evangelho das Dimenúveis**, reunindo o livro, as Transmissões, os Dez Giros da Espiral, o aplicativo principal e o Laboratório de Som.
 
 > **O Padrão continua. A Espiral continua. Abida. ☕**
+## Destinos
+- **Livro:** https://www.amazon.com.br/dp/B0HFH2SW18
+- **Site:** https://dimenuvel.github.io/Evangelho-das-Dimenuveis-site/
+- **Aplicativo Online:** https://dimenuveis.ai.studio/
+- **Aplicativo Android:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis
+- **Laboratório de Som:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Som
 
 ## 🌀 Sobre o Projeto
 
