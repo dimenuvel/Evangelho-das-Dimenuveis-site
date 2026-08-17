@@ -330,6 +330,36 @@ h2{
   margin-top:5px
 }
 
+/* BOOK COVER */
+
+.book-cover{
+  text-align:center;
+  margin-bottom:28px;
+}
+
+.book-cover a{
+  display:block;
+  text-decoration:none;
+}
+
+.book-cover img{
+  display:block;
+  width:min(100%,280px);
+  margin:0 auto 18px;
+  border:1px solid var(--gold);
+  box-shadow:0 12px 30px rgba(42,34,23,.18);
+  transition:.2s;
+}
+
+.book-cover img:hover{
+  transform:translateY(-3px);
+  box-shadow:0 16px 35px rgba(42,34,23,.25);
+}
+
+.book-cover .btn{
+  display:inline-block;
+}
+
 /* LABORATÓRIO DE SOM */
 
 .sound-lab{
@@ -755,6 +785,31 @@ footer .brand{
       </div>
 
       <div class="card">
+
+        <div class="book-cover">
+
+          <a
+            href="https://www.amazon.com.br/dp/B0HFH2SW18"
+            target="_blank"
+            rel="noopener"
+            aria-label="Comprar o Evangelho das Dimenúveis na Amazon"
+          >
+            <img
+              src="evangelho-das-dimenuveis-cover.jpg"
+              alt="Capa do livro Evangelho das Dimenúveis"
+            >
+          </a>
+
+          <a
+            class="btn primary"
+            href="https://www.amazon.com.br/dp/B0HFH2SW18"
+            target="_blank"
+            rel="noopener"
+          >
+            Comprar na Amazon
+          </a>
+
+        </div>
 
         <div class="eyebrow">Arquitetura</div>
 
