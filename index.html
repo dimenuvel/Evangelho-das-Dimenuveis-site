@@ -651,6 +651,108 @@ footer .brand{
   color:#857d6e
 }
 
+/* PDF READER */
+
+.pdf-reader{
+  border:1px solid var(--line);
+  background:rgba(248,243,232,.55);
+  box-shadow:0 10px 30px rgba(42,34,23,.06);
+}
+
+.pdf-toolbar{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  padding:14px 18px;
+  border-bottom:1px solid var(--line);
+  background:rgba(238,229,210,.7);
+}
+
+.pdf-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:36px;
+  height:36px;
+  padding:0 12px;
+  border:1px solid var(--green);
+  background:transparent;
+  color:var(--green);
+  text-decoration:none;
+  font:600 .85rem Arial,sans-serif;
+  cursor:pointer;
+  transition:.18s;
+}
+
+.pdf-btn:hover{
+  background:var(--green);
+  color:var(--white);
+}
+
+.pdf-page-info{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font:600 .78rem Arial,sans-serif;
+  letter-spacing:.04em;
+  color:var(--muted);
+}
+
+.pdf-page-info input{
+  width:52px;
+  padding:6px;
+  border:1px solid var(--line);
+  background:var(--white);
+  font:600 .8rem Arial,sans-serif;
+  text-align:center;
+  color:var(--ink);
+}
+
+.pdf-toolbar-gap{
+  flex:1;
+}
+
+.pdf-zoom-level{
+  min-width:44px;
+  text-align:center;
+  font:600 .75rem Arial,sans-serif;
+  color:var(--muted);
+}
+
+.pdf-download{
+  white-space:nowrap;
+}
+
+.pdf-canvas-wrap{
+  min-height:420px;
+  max-height:80vh;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:24px;
+  overflow:auto;
+  background:
+    repeating-linear-gradient(45deg,rgba(67,57,42,.02) 0,rgba(67,57,42,.02) 1px,transparent 1px,transparent 14px),
+    var(--paper2);
+}
+
+.pdf-loading{
+  padding:60px 0;
+  font:600 .8rem Arial,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--brown);
+}
+
+#pdfCanvas{
+  display:none;
+  max-width:100%;
+  height:auto;
+  background:#fff;
+  box-shadow:0 12px 30px rgba(42,34,23,.18);
+}
+
 @media(max-width:760px){
 
   .nav{
@@ -687,6 +789,24 @@ footer .brand{
   .sound-card{
     padding:25px
   }
+
+  .pdf-toolbar{
+    justify-content:center
+  }
+
+  .pdf-toolbar-gap{
+    display:none
+  }
+
+  .pdf-download{
+    margin-top:6px;
+    width:100%;
+    text-align:center
+  }
+
+  .pdf-canvas-wrap{
+    padding:14px
+  }
 }
 </style>
 </head>
@@ -703,6 +823,7 @@ footer .brand{
 
     <nav>
       <a href="#livro">O Livro</a>
+      <a href="#leia">Ler Online</a>
       <a href="#transmissoes">Transmissões</a>
       <a href="#giros">Os Giros</a>
       <a href="#som">Laboratório de Som</a>
@@ -814,6 +935,7 @@ footer .brand{
         <div class="eyebrow">Arquitetura</div>
 
         <ul class="list">
+          <li><a href="#leia">Ler Online (PDF)</a></li>
           <li><a href="#transmissoes">As Transmissões</a></li>
           <li><a href="#revelacao">A Revelação das Dimenúveis</a></li>
           <li><a href="#giros">Os Dez Giros da Espiral</a></li>
@@ -821,6 +943,60 @@ footer .brand{
           <li><a href="#app">O aplicativo</a></li>
         </ul>
 
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- EMBEDDED PDF READER -->
+
+<section id="leia">
+
+  <div class="wrap">
+
+    <div class="section-head">
+
+      <div class="eyebrow">Leitura</div>
+
+      <h2>Leia o Evangelho Online</h2>
+
+      <p class="lead">
+        O livro completo, direto no navegador. Sem downloads, sem contas.
+      </p>
+
+    </div>
+
+    <div class="pdf-reader">
+
+      <div class="pdf-toolbar">
+
+        <button id="pdfPrev" class="pdf-btn" type="button" aria-label="Página anterior">‹</button>
+
+        <span class="pdf-page-info">
+          Página
+          <input id="pdfPageNum" type="number" min="1" value="1">
+          de <span id="pdfPageCount">—</span>
+        </span>
+
+        <button id="pdfNext" class="pdf-btn" type="button" aria-label="Próxima página">›</button>
+
+        <span class="pdf-toolbar-gap"></span>
+
+        <button id="pdfZoomOut" class="pdf-btn" type="button" aria-label="Diminuir zoom">−</button>
+        <span id="pdfZoomLevel" class="pdf-zoom-level">100%</span>
+        <button id="pdfZoomIn" class="pdf-btn" type="button" aria-label="Aumentar zoom">+</button>
+
+        <a class="pdf-btn pdf-download" href="evangelho-das-dimenuveis.pdf" download>⬇ Baixar PDF</a>
+
+      </div>
+
+      <div class="pdf-canvas-wrap" id="pdfCanvasWrap">
+        <div class="pdf-loading" id="pdfLoading">Carregando o livro…</div>
+        <canvas id="pdfCanvas"></canvas>
       </div>
 
     </div>
@@ -1328,6 +1504,115 @@ modal.onclick=e=>{
 document.onkeydown=e=>{
   if(e.key==="Escape")closeReading();
 };
+
+</script>
+
+
+<!-- PDF READER: Mozilla PDF.js (loaded from CDN, nothing to upload) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+<script>
+
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+(function(){
+
+  const PDF_URL = "evangelho-das-dimenuveis.pdf";
+
+  const canvas = document.getElementById("pdfCanvas");
+  const ctx = canvas.getContext("2d");
+  const loadingEl = document.getElementById("pdfLoading");
+  const pageNumInput = document.getElementById("pdfPageNum");
+  const pageCountEl = document.getElementById("pdfPageCount");
+  const zoomLevelEl = document.getElementById("pdfZoomLevel");
+
+  const BASE_SCALE = 1.2; // corresponds to the "100%" shown to the user
+
+  let pdfDoc = null;
+  let pageNum = 1;
+  let scale = BASE_SCALE;
+  let rendering = false;
+  let pendingPage = null;
+
+  function updateZoomLabel(){
+    zoomLevelEl.textContent = Math.round((scale / BASE_SCALE) * 100) + "%";
+  }
+
+  function renderPage(num){
+    if(!pdfDoc)return;
+    rendering = true;
+
+    pdfDoc.getPage(num).then(function(page){
+      const viewport = page.getViewport({scale:scale});
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      page.render({canvasContext:ctx, viewport:viewport}).promise.then(function(){
+        rendering = false;
+        if(pendingPage !== null){
+          const next = pendingPage;
+          pendingPage = null;
+          renderPage(next);
+        }
+      });
+    });
+
+    pageNumInput.value = num;
+  }
+
+  function queueRenderPage(num){
+    if(rendering){
+      pendingPage = num;
+    }else{
+      renderPage(num);
+    }
+  }
+
+  function goToPage(num){
+    if(!pdfDoc)return;
+    if(num < 1)num = 1;
+    if(num > pdfDoc.numPages)num = pdfDoc.numPages;
+    pageNum = num;
+    queueRenderPage(pageNum);
+  }
+
+  document.getElementById("pdfPrev").addEventListener("click",function(){
+    goToPage(pageNum - 1);
+  });
+
+  document.getElementById("pdfNext").addEventListener("click",function(){
+    goToPage(pageNum + 1);
+  });
+
+  pageNumInput.addEventListener("change",function(){
+    goToPage(parseInt(pageNumInput.value,10) || 1);
+  });
+
+  document.getElementById("pdfZoomIn").addEventListener("click",function(){
+    scale = Math.min(scale + 0.2, 3);
+    updateZoomLabel();
+    queueRenderPage(pageNum);
+  });
+
+  document.getElementById("pdfZoomOut").addEventListener("click",function(){
+    scale = Math.max(scale - 0.2, 0.4);
+    updateZoomLabel();
+    queueRenderPage(pageNum);
+  });
+
+  pdfjsLib.getDocument(PDF_URL).promise.then(function(doc){
+    pdfDoc = doc;
+    pageCountEl.textContent = doc.numPages;
+    loadingEl.style.display = "none";
+    canvas.style.display = "block";
+    renderPage(pageNum);
+  }).catch(function(err){
+    loadingEl.textContent =
+      "Não foi possível carregar o livro aqui. Use o botão de download acima.";
+  });
+
+})();
 
 </script>
 
