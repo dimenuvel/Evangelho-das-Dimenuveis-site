@@ -483,6 +483,63 @@ h2{
   color:var(--brown);
 }
 
+/* PHONE-FRAME IFRAME EMBED (used by the game section) */
+
+.phone-embed{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:0 0 36px;
+}
+
+.phone-frame{
+  width:min(360px,100%);
+  aspect-ratio:9/19.5;
+  border:10px solid var(--green);
+  border-radius:38px;
+  overflow:hidden;
+  position:relative;
+  background:#111;
+  box-shadow:0 20px 50px rgba(42,34,23,.28);
+}
+
+.phone-frame:before{
+  content:"";
+  position:absolute;
+  top:8px;
+  left:50%;
+  transform:translateX(-50%);
+  width:80px;
+  height:16px;
+  background:var(--green);
+  border-radius:0 0 12px 12px;
+  z-index:2;
+}
+
+.phone-frame iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+  position:relative;
+  z-index:1;
+}
+
+.phone-embed-note{
+  margin-top:14px;
+  text-align:center;
+  font:600 .68rem Arial,sans-serif;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--brown);
+}
+
+.phone-embed-note a{
+  color:var(--green);
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+
 /* APP */
 
 .app{
@@ -1233,6 +1290,26 @@ footer .brand{
       um reconhecimento. Dez Turnos conduzem o jogador do Salão de Boliche
       Cósmico até o Núcleo Dourado, no Turno X — Retorno ao Centro.
     </p>
+
+    <!-- Playable embed: mobile-phone-style iframe frame -->
+    <div class="phone-embed">
+
+      <div class="phone-frame">
+        <iframe
+          id="abidaFrame"
+          src="https://abida-ojogo.ai.studio/"
+          title="Abida — O Jogo (jogável)"
+          allow="autoplay; fullscreen; gamepad; accelerometer"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <p class="phone-embed-note">
+        Não carregou? <a href="https://abida-ojogo.ai.studio/" target="_blank" rel="noopener">Abrir o jogo em uma nova aba →</a>
+      </p>
+
+    </div>
 
     <div class="sound-panel">
 
