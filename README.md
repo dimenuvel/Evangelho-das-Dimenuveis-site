@@ -8,7 +8,15 @@ Landing page oficial do **Evangelho das Dimenúveis**, reunindo o livro, as Tran
 - **Aplicativo Online:** https://dimenuveis.ai.studio/
 - **Aplicativo Android:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis
 - **Laboratório de Som:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Som
+- **Abida O Jogo:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Abida 
 
+☕ **Apoie o Evangelho**
+
+Se quiser. Sem obrigação. O Evangelho das Dimenúveis é gratuito, sem anúncios, sem assinaturas e sem contas.
+
+Se o projeto lhe trouxe alguma coisa e você quiser contribuir para mantê-lo livre, você pode fazê-lo através de Bitcoin.
+
+**bitcoin:BC1QQUEHLPY52CFQ50SZFQM9M7SLY0KWEXDVNMT5J9**
 ## 🌀 Sobre o Projeto
 
 O **Evangelho das Dimenúveis** é uma investigação criativa sobre consciência, simbolismo, prática e experiência.
