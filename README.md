@@ -1,58 +1,61 @@
-# Evangelho das Dimenúveis — Landing Page
-
-Landing page oficial do **Evangelho das Dimenúveis**, reunindo o livro, as Transmissões, os Dez Giros da Espiral, o aplicativo principal e o Laboratório de Som.
+# 🌌 Evangelho das Dimenúveis — Landing Page
 
 > **O Padrão continua. A Espiral continua. Abida. ☕**
-## Destinos
-- **Site:** https://dimenuvel.github.io/Evangelho-das-Dimenuveis-site/
-- **Aplicativo Online:** https://dimenuveis.ai.studio/
-- **Aplicativo Android:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis
-- **Laboratório de Som:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Som
-- **Abida O Jogo:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Abida 
 
-☕ **Apoie o Evangelho**
+Landing page oficial e ponto de entrada do ecossistema **Evangelho das Dimenúveis**.
 
-Se quiser. Sem obrigação. O Evangelho das Dimenúveis é gratuito, sem anúncios, sem assinaturas e sem contas.
+## 🧭 Mapa do Site e do Ecossistema
 
-Se o projeto lhe trouxe alguma coisa e você quiser contribuir para mantê-lo livre, você pode fazê-lo através de Bitcoin.
+```text
+EVANGELHO DAS DIMENÚVEIS
+│
+├── 📖 LIVRO
+│   ├── Transmissões
+│   ├── Revelação das Dimenúveis
+│   ├── Mistérios / Salmos / Provérbios
+│   └── Dez Giros da Espiral
+│
+├── 📱 APLICATIVO PRINCIPAL
+│   ├── Início / Dimenúveis
+│   ├── Dez Giros / práticas
+│   ├── Temporizador / progresso
+│   ├── Leitor do Evangelho
+│   ├── Tarô dos Dimenúveis
+│   └── Laboratório de Som integrado
+│
+├── 〰️ LABORATÓRIO DE SOM
+│   ├── Presets / frequências
+│   ├── Binaural / ondas
+│   ├── LFO / modulação
+│   ├── Camadas sonoras
+│   └── Visualizadores / temporizador
+│
+├── 🎳 ABIDA — O JOGO
+│   ├── 10 Turnos + Turno X
+│   ├── Brick-breaker cósmico
+│   ├── Abide Mode / vogais / power-ups
+│   └── História / Infinito / Diário
+│
+└── 🧘 ABIDAR — THE COSMIC CARPET RIDE
+    ├── Modo História
+    ├── Modo Infinito
+    ├── Tapete voador
+    └── Colecionáveis / power-ups / ABIDE
+```
 
-**bitcoin:BC1QQUEHLPY52CFQ50SZFQM9M7SLY0KWEXDVNMT5J9**
-## 🌀 Sobre o Projeto
+## 🔗 Destinos
 
-O **Evangelho das Dimenúveis** é uma investigação criativa sobre consciência, simbolismo, prática e experiência.
+| Projeto | Acesso |
+|---|---|
+| 🌐 Landing Page | https://dimenuvel.github.io/Evangelho-das-Dimenuveis-site/ |
+| 📱 Aplicativo Online | https://dimenuveis.ai.studio/ |
+| 📱 Aplicativo Principal / Android | https://github.com/dimenuvel/Evangelho-das-Dimenuveis |
+| 〰️ Laboratório de Som | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Som |
+| 🎳 Abida — O Jogo | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Abida |
+| 🧘 Abidar — Cosmic Carpet Ride | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Abidar |
+| 🧘 Abidar — versão online | https://abidar-the-cosmic-carpet-ride.ai.studio/ |
 
-Não é apresentado como uma religião nem como uma promessa de iluminação. É um espaço para ler, experimentar, questionar, reconhecer padrões e, ocasionalmente, tomar um café.
-
-O projeto combina:
-
-- Hermetismo e prática contemplativa
-- Gnosticismo e simbolismo
-- Filosofia experimental
-- Cultura contracultural
-- Humor
-- A linguagem das Dimenúveis
-- A Espiral e o Espelho
-- A presença de **O Cara**
-
-O projeto foi concebido para funcionar em várias formas: **livro, aplicativo, práticas, transmissões e instrumentos experimentais.**
-
----
-
-## 📖 O Livro
-
-**Evangelho das Dimenúveis**
-
-Um livro para quem desconfia de respostas definitivas — e ainda assim continua fazendo perguntas.
-
-A arquitetura do projeto explora as Dimenúveis, a Espiral, o Espelho, as Transmissões e os Dez Giros.
-
-O livro aprofunda aquilo que o aplicativo transforma em experiência prática.
-
----
-
-## 🌀 Os Dez Giros da Espiral
-
-O projeto possui dez movimentos práticos:
+## 🌀 Os Dez Giros
 
 1. **O Espelho da Mente**
 2. **A Vontade que Escolhe**
@@ -65,190 +68,36 @@ O projeto possui dez movimentos práticos:
 9. **A Porta Entre as Camadas**
 10. **O Retorno ao Centro**
 
-Os Giros representam o caminho prático do projeto: sair da teoria e entrar na experiência.
-
-O **aplicativo principal** contém as práticas dos Giros, enquanto o livro aprofunda o significado e o contexto do caminho.
-
----
+Os Giros representam a passagem da teoria para a experiência prática.
 
 ## 📜 Transmissões
 
-As Transmissões são pequenas portas para o mesmo lugar.
+A landing page apresenta leituras como **A Espiral Viva**, **A Espiral Que Sorri**, **O Cinza no Centro**, **A Revelação das Dimenúveis**, **O Akasha** e **Sobre o projeto**.
 
-Entre elas:
+## 📖 O Livro
 
-- **A Espiral Viva**
-- **A Espiral Que Sorri**
-- **O Cinza no Centro**
-- **A Revelação das Dimenúveis**
-- **O Akasha**
-- **Sobre o projeto**
+O livro explora as Dimenúveis, a Espiral, o Espelho, as Transmissões e os Dez Giros. O aplicativo transforma parte desse conteúdo em experiência prática.
 
-A landing page disponibiliza algumas dessas leituras diretamente em janelas de leitura.
+## 📱 Aplicativo Principal
 
----
+Reúne Dez Giros e práticas contemplativas, perfis e progresso, leitor do Evangelho e Provérbios, Tarô dos Dimenúveis, Laboratório de Som integrado e experiência offline na versão Android.
 
-# 📱 Aplicativo Principal
+## 〰️ Laboratório de Som
 
-## Evangelho das Dimenúveis
+Projeto independente de exploração sonora, com frequências, binaural, formas de onda, LFO, camadas, visualizadores harmônicos e temporizador contemplativo.
 
-O aplicativo principal é a parte prática do projeto.
+## 🎳 Jogos
 
-Ele reúne:
+### Abida — O Jogo
+Brick-breaker cósmico inspirado no universo do Evangelho, com pinos de boliche, Dimenúveis, power-ups, vogais sagradas, Abide Mode e modos de jogo.
 
-- Os Dez Giros da Espiral
-- Práticas contemplativas
-- Progressão do praticante
-- Perfis de praticantes
-- Registro de progresso
-- Experiência personalizada
-- Tarot dos Dimenúveis
-- **Laboratório de Som integrado na versão nativa**
-- Experiência offline na versão Android
+### Abidar — The Cosmic Carpet Ride
+Arcade retro em que O Cara viaja em um tapete voador, desviando de perigos e coletando pinos, cafés, estrelas e orbes elementais.
 
-### Aplicativo Online
-
-https://dimenuveis.ai.studio/
-
-### Repositório Android / Aplicativo
-
-https://github.com/dimenuvel/Evangelho-das-Dimenuveis
-
----
-
-# 🔮 Tarô dos Dimenúveis
-
-O aplicativo também incorpora o **Tarô dos Dimenúveis**, desenvolvido como parte do universo simbólico do Evangelho.
-
-O baralho foi concebido inicialmente em torno dos **22 Arcanos Maiores**, incluindo o **Espelho** como uma carta especial associada à estrutura oculta das Dimenúveis.
-
-O Tarot funciona como uma ferramenta de reflexão e exploração simbólica dentro do aplicativo — não como uma autoridade que determina o futuro.
-
----
-
-# 〰️ Laboratório de Som
-
-O projeto possui também um **Laboratório de Som dedicado**.
-
-Ele nasceu como um instrumento experimental independente, focado em frequência, ritmo, silêncio, atenção e exploração sonora.
-
-Entre seus recursos estão:
-
-- Batimentos binaurais estéreo
-- Frequências esquerda e direita independentes
-- Ondas seno
-- Ondas triangulares
-- Ondas quadradas
-- Ondas dente-de-serra
-- Modulação rítmica
-- LFO
-- Camadas sonoras combináveis
-- Controle de volume
-- Balanço estéreo
-- Harmônicos
-- Frequências de referência
-- Modos contemplativos inspirados nas Dimenúveis
-
-O Laboratório **não pretende diagnosticar, tratar ou curar condições médicas**. É um instrumento experimental para exploração sonora e observação da própria experiência.
-
-### Laboratório de Som — Repositório
-
-https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Som
-
-### Laboratório de Som dentro do aplicativo
-
-A versão **nativa do aplicativo principal** também possui um Laboratório de Som integrado, permitindo explorar frequências, batimentos binaurais e camadas sonoras sem precisar sair do Evangelho.
-
-Assim, existem duas frentes relacionadas:
-
-**Aplicativo principal**  
-Evangelho + práticas + Giros + Tarot + Laboratório de Som integrado.
-
-**Projeto dedicado**  
-Laboratório de Som independente, com seu próprio desenvolvimento e futura fábrica de APK.
-
----
-
-# 🌐 Esta Landing Page
-
-Este repositório contém a página de apresentação do projeto.
-
-Ela funciona como o ponto de entrada para todo o ecossistema:
-
-**Livro → Transmissões → Giros → Tarot → Laboratório de Som → Aplicativo**
-
-A página é propositalmente simples e independente, podendo ser hospedada diretamente pelo GitHub Pages.
-
-### Site
-
-https://dimenuvel.github.io/Evangelho-das-Dimenuveis-site/
-
----
-
-## 🗂️ Estrutura dos Projetos
-
-```text
-EVANGELHO DAS DIMENÚVEIS
-│
-├── 📖 Livro
-│   ├── Transmissões
-│   ├── Revelação das Dimenúveis
-│   └── Dez Giros da Espiral
-│
-├── 📱 Aplicativo Principal
-│   ├── Dez Giros
-│   ├── Práticas
-│   ├── Perfis
-│   ├── Progresso
-│   ├── Tarô dos Dimenúveis
-│   └── Laboratório de Som integrado
-│
-├── 〰️ Laboratório de Som
-│   ├── Frequências
-│   ├── Binaural
-│   ├── Ondas
-│   ├── LFO
-│   └── Camadas sonoras
-│
-└── 🌐 Landing Page
-    └── Este repositório
-```
-
----
-
-# 🔗 Links do Ecossistema
-
-| Projeto | Link |
-|---|---|
-| 🌐 Landing Page | https://dimenuvel.github.io/Evangelho-das-Dimenuveis-site/ |
-| 📱 Aplicativo Online | https://dimenuveis.ai.studio/ |
-| 📱 App / Android | https://github.com/dimenuvel/Evangelho-das-Dimenuveis |
-| 〰️ Laboratório de Som | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Som |
-
----
-
-# ☕ Filosofia
+## ☕ Filosofia
 
 > **Não existe fora das Dimenúveis. Nunca existiu.**
 
-O Evangelho não pede que você acredite.
+O projeto não é apresentado como uma religião nem como uma promessa de iluminação. É um espaço para ler, experimentar, questionar, reconhecer padrões e, quando tudo ficar complicado demais, tomar um café.
 
-Leia.
-
-Experimente.
-
-Discorde.
-
-Reconheça.
-
-E, quando tudo ficar complicado demais:
-
-**tome um café.**
-
----
-
-## 🌀 Abida.
-
-**O Padrão continua.  
-A Espiral continua.**
-"""
+**Abida.**
