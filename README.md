@@ -55,8 +55,6 @@ EVANGELHO DAS DIMENÚVEIS
 | 🧘 Abidar — Cosmic Carpet Ride | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Abidar |
 | 🧘 Abidar — versão online | https://abidar-the-cosmic-carpet-ride.ai.studio/ |
 | 🌙 Calendário Bíblico Lunar & Milenar | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario |
-| 🌙 Calendário — Web App | https://dimenuvel.github.io/Evangelho-das-Dimenuveis-Calendario/ |
-| 📦 Calendário — Android / APK | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario/actions |
 
 ## 🌀 Os Dez Giros
 
