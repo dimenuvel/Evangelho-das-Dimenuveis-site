@@ -54,6 +54,9 @@ EVANGELHO DAS DIMENÚVEIS
 | 🎳 Abida — O Jogo | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Abida |
 | 🧘 Abidar — Cosmic Carpet Ride | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Abidar |
 | 🧘 Abidar — versão online | https://abidar-the-cosmic-carpet-ride.ai.studio/ |
+| 🌙 Calendário Bíblico Lunar & Milenar | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario |
+| 🌙 Calendário — Web App | https://dimenuvel.github.io/Evangelho-das-Dimenuveis-Calendario/ |
+| 📦 Calendário — Android / APK | https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario/actions |
 
 ## 🌀 Os Dez Giros
 
@@ -77,6 +80,58 @@ A landing page apresenta leituras como **A Espiral Viva**, **A Espiral Que Sorri
 ## 📖 O Livro
 
 O livro explora as Dimenúveis, a Espiral, o Espelho, as Transmissões e os Dez Giros. O aplicativo transforma parte desse conteúdo em experiência prática.
+
+## 🌙 Calendário Bíblico Lunar & Milenar
+
+**Evangelho das Dimenúveis — Calendário Bíblico Lunar e Milenar** é o instrumento
+astronômico e cronológico do ecossistema: um almanaque bíblico interativo que
+combina o calendário sagrado de **13 meses × 28 dias + Dia Zero**, as **8 fases
+reais da Lua**, as **Festas Bíblicas de Levítico 23**, o sistema contínuo de
+**52 Sábados**, a **Grande Semana de 7.000 anos** e uma arquitetura do tempo
+em múltiplas camadas.
+
+### Principais módulos
+
+1. **Relógio Sagrado / Hoje** — data sagrada, semana, Sábado, Lua e efemérides
+   solares calculadas por localização.
+2. **Calendário Perpétuo** — 13 meses iguais de 28 dias, 364 dias numerados e
+   o **Dia Zero** como limiar anual.
+3. **Moedim / Festas Bíblicas** — Pesach, Pães Asmos, Primícias, Shavuot,
+   Yom Teruah, Yom Kippur, Sukkot e Shemini Atzeret.
+4. **Camada Lunar Astronômica** — ciclo sinódico real e três modos de ancoragem:
+   conjunção astronômica, crescente visível e observacional.
+5. **Sábado Contínuo** — Dias 7, 14, 21 e 28, totalizando 52 Sábados semanais,
+   além do Dia Zero e classificações especiais.
+6. **Relógio Milenar** — modelo da Grande Semana baseado na correspondência
+   profética de 1 dia / 1.000 anos.
+7. **Cronologia Comparativa** — modelos Ussher, Rabínico Tradicional, LXX e
+   Época Sagrada Astronômica / Modelo Dimenúveis.
+8. **Escrituras, Eclipses & Arqueoastronomia** — incluindo o estudo do Dia
+   Longo de Josué e outros eventos celestes bíblicos.
+9. **Arquitetura do Tempo** — seis camadas que conectam tempo sagrado,
+   celestial, bíblico, milenar, histórico e Dimenúveis.
+10. **Ajustes e Alertas** — notificações de Festas, Sábados e Lua Nova,
+    coordenadas GPS e nomes personalizados dos meses.
+11. **Verificação Matemática** — suíte interativa de testes automatizados para
+    verificar a integridade do motor do calendário.
+
+### Cosmologia e tradição textual
+
+O projeto também apresenta uma camada cosmológica baseada na leitura dos
+**luminares, ciclos, portões celestes e calendário solar/lunar descritos em
+1 Enoque 72–78**, integrada à linguagem própria do Evangelho das Dimenúveis.
+
+### Acesso
+
+- **GitHub:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario
+- **Web App:** https://dimenuvel.github.io/Evangelho-das-Dimenuveis-Calendario/
+- **Android / APK:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario/actions
+- **Idiomas:** Português 🇧🇷 / English 🇺🇸
+- **Interface:** Modo Noite / Modo Dia
+
+O Calendário não é apresentado como um calendário civil convencional, mas como
+um instrumento de investigação da arquitetura do tempo dentro do universo
+conceitual do Evangelho das Dimenúveis.
 
 ## 📱 Aplicativo Principal
 
