@@ -122,8 +122,6 @@ O projeto também apresenta uma camada cosmológica baseada na leitura dos
 ### Acesso
 
 - **GitHub:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario
-- **Web App:** https://dimenuvel.github.io/Evangelho-das-Dimenuveis-Calendario/
-- **Android / APK:** https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario/actions
 - **Idiomas:** Português 🇧🇷 / English 🇺🇸
 - **Interface:** Modo Noite / Modo Dia
 
