@@ -886,6 +886,232 @@ footer .brand{
     padding:14px
   }
 }
+
+
+/* CALENDÁRIO BÍBLICO LUNAR & MILENAR */
+
+.calendar-lab{
+  background:
+    radial-gradient(circle at 18% 10%,rgba(167,131,69,.13),transparent 26rem),
+    radial-gradient(circle at 88% 78%,rgba(63,70,53,.09),transparent 30rem),
+    linear-gradient(135deg,rgba(113,88,61,.055),rgba(167,131,69,.035)),
+    var(--paper2);
+}
+
+.calendar-lab .section-head{
+  max-width:820px;
+}
+
+.calendar-hero{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:24px;
+  align-items:stretch;
+}
+
+.calendar-card{
+  background:rgba(248,243,232,.76);
+  border:1px solid var(--line);
+  padding:34px;
+  box-shadow:0 12px 35px rgba(42,34,23,.07);
+}
+
+.calendar-card h3{
+  margin:8px 0 10px;
+  color:var(--green);
+  font-size:clamp(1.65rem,3vw,2.2rem);
+  line-height:1.08;
+  font-weight:400;
+}
+
+.calendar-card p{color:var(--muted)}
+
+.calendar-version{
+  display:inline-block;
+  margin-left:8px;
+  padding:4px 8px;
+  border:1px solid rgba(167,131,69,.45);
+  color:var(--brown);
+  font:700 .62rem Arial,sans-serif;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  vertical-align:middle;
+}
+
+.calendar-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:24px;
+}
+
+.calendar-actions .btn{margin:0}
+
+.calendar-specs{
+  background:var(--green);
+  color:var(--white);
+  padding:34px;
+  border:1px solid var(--green);
+  box-shadow:0 12px 35px rgba(42,34,23,.10);
+}
+
+.calendar-specs .eyebrow{color:#e7d5a7}
+
+.calendar-specs h3{
+  color:#f0dfb4;
+  margin:8px 0 16px;
+  font-size:1.55rem;
+  font-weight:400;
+}
+
+.calendar-specs p{color:#d7d2c4}
+
+.calendar-equation{
+  margin:20px 0 0;
+  padding:15px 16px;
+  border:1px solid rgba(231,213,167,.28);
+  color:#f0dfb4;
+  text-align:center;
+  font-size:1.1rem;
+  line-height:1.45;
+}
+
+.calendar-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:18px;
+}
+
+.calendar-badge{
+  border:1px solid rgba(167,131,69,.35);
+  background:rgba(167,131,69,.07);
+  padding:8px 10px;
+  color:var(--brown);
+  font:700 .62rem Arial,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.calendar-modules{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+  margin-top:24px;
+}
+
+.calendar-module{
+  background:rgba(248,243,232,.58);
+  border:1px solid var(--line);
+  padding:24px;
+  box-shadow:0 8px 25px rgba(42,34,23,.045);
+}
+
+.calendar-module .module-number{
+  color:var(--gold);
+  font:700 .68rem Arial,sans-serif;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+.calendar-module h3{
+  margin:7px 0 9px;
+  color:var(--green);
+  font-size:1.28rem;
+  line-height:1.15;
+  font-weight:400;
+}
+
+.calendar-module p{
+  margin:0;
+  color:var(--muted);
+  font-size:.96rem;
+}
+
+.calendar-module strong{color:var(--ink)}
+
+.calendar-architecture{
+  margin-top:24px;
+  padding:30px;
+  background:rgba(63,70,53,.055);
+  border:1px solid var(--line);
+}
+
+.calendar-architecture h3{
+  margin:0 0 12px;
+  color:var(--green);
+  font-size:1.55rem;
+  font-weight:400;
+}
+
+.calendar-layers{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:18px;
+}
+
+.calendar-layer{
+  padding:14px;
+  border:1px solid var(--line);
+  background:rgba(248,243,232,.55);
+}
+
+.calendar-layer strong{
+  display:block;
+  color:var(--green);
+  font-size:.96rem;
+  margin-bottom:4px;
+}
+
+.calendar-layer span{
+  display:block;
+  color:var(--muted);
+  font-size:.82rem;
+}
+
+.calendar-footer-card{
+  margin-top:24px;
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  align-items:center;
+  padding:25px 28px;
+  background:rgba(113,88,61,.08);
+  border:1px solid var(--line);
+}
+
+.calendar-footer-card h3{
+  margin:0 0 5px;
+  color:var(--green);
+  font-size:1.35rem;
+  font-weight:400;
+}
+
+.calendar-footer-card p{
+  margin:0;
+  color:var(--muted);
+}
+
+@media(max-width:760px){
+  .calendar-hero,
+  .calendar-modules{
+    grid-template-columns:1fr;
+  }
+
+  .calendar-layers{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .calendar-footer-card{
+    display:block;
+  }
+
+  .calendar-footer-card .btn{
+    margin-top:18px;
+  }
+}
+
 </style>
 </head>
 
@@ -901,6 +1127,7 @@ footer .brand{
 
     <nav>
       <a href="#livro">O Livro</a>
+      <a href="#calendario">Calendário</a>
       <a href="#leia">Ler Online</a>
       <a href="#transmissoes">Transmissões</a>
       <a href="#giros">Os Giros</a>
@@ -1063,6 +1290,270 @@ footer .brand{
 </section>
 
 
+
+<!-- CALENDÁRIO BÍBLICO LUNAR & MILENAR -->
+
+<section class="calendar-lab" id="calendario">
+
+  <div class="wrap">
+
+    <div class="section-head">
+      <div class="eyebrow">Novo Instrumento · Versão 1.1</div>
+      <h2>Calendário Bíblico Lunar &amp; Milenar</h2>
+      <p class="lead">
+        Um almanaque astronômico, bíblico e cronológico interativo que une a
+        simetria perpétua do <strong>Calendário Sagrado de 13 Meses × 28 Dias
+        (364 dias + Dia Zero)</strong>, o cálculo astronômico real das
+        <strong>8 fases da Lua</strong>, as <strong>Festas Bíblicas de Levítico 23</strong>,
+        o <strong>Relógio Milenar da Grande Semana de 7.000 Anos</strong> e a
+        <strong>Arquitetura do Tempo em 6 Camadas</strong>.
+      </p>
+    </div>
+
+    <div class="calendar-hero">
+
+      <div class="calendar-card">
+        <div class="eyebrow">Evangelho das Dimenúveis</div>
+        <h3>
+          Calendário Bíblico Lunar e Milenar
+          <span class="calendar-version">v1.1</span>
+        </h3>
+        <p>
+          Um instrumento bilíngue para explorar o tempo sagrado, as fases reais
+          da Lua, as festas bíblicas, a cronologia histórica e a Grande Semana.
+          Disponível como <strong>Web App interativo</strong> para desktop e
+          mobile e como <strong>aplicativo nativo Android</strong>.
+        </p>
+
+        <div class="calendar-badges">
+          <span class="calendar-badge">PT 🇧🇷 / EN 🇺🇸</span>
+          <span class="calendar-badge">Web + Android</span>
+          <span class="calendar-badge">13 × 28 + Dia Zero</span>
+          <span class="calendar-badge">8 Fases Lunares</span>
+          <span class="calendar-badge">Levítico 23</span>
+          <span class="calendar-badge">7.000 Anos</span>
+        </div>
+
+        <div class="calendar-actions">
+          <a
+            class="btn primary"
+            href="https://dimenuvel.github.io/Evangelho-das-Dimenuveis-Calendario/"
+            target="_blank"
+            rel="noopener"
+          >
+            Abrir Web App
+          </a>
+
+          <a
+            class="btn secondary"
+            href="https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario"
+            target="_blank"
+            rel="noopener"
+          >
+            Repositório GitHub
+          </a>
+
+          <a
+            class="btn secondary"
+            href="https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario/actions"
+            target="_blank"
+            rel="noopener"
+          >
+            Baixar APK Android v1.1
+          </a>
+        </div>
+      </div>
+
+      <div class="calendar-specs">
+        <div class="eyebrow">Arquitetura do Tempo</div>
+        <h3>13 Meses × 28 Dias + Dia Zero</h3>
+        <p>
+          O Ano Sagrado preserva 364 dias numerados em 13 meses perfeitamente
+          simétricos. O <strong>Dia Zero</strong> permanece fora da numeração,
+          como o limiar anual do Ano Novo Sagrado ancorado na camada lunar.
+        </p>
+        <div class="calendar-equation">
+          Ano Sagrado = 1 Dia Zero + (13 × 28) = 365 dias
+        </div>
+        <div class="calendar-equation">
+          364 dias numerados ÷ 7 = 52 Sábados semanais
+        </div>
+      </div>
+
+    </div>
+
+    <div class="calendar-modules">
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. I · Relógio Sagrado</div>
+        <h3>Hoje &amp; Efemérides Solares por GPS</h3>
+        <p>
+          Exibe a data atual no Ano Sagrado, semana do ano, dia da semana,
+          status do Sábado, fase e iluminação da Lua e contagem regressiva para
+          a próxima Festa Bíblica. Calcula <strong>nascer do Sol, meio-dia solar,
+          pôr do Sol</strong> (início do dia bíblico) e crepúsculo usando o GPS
+          local, ou Jerusalém como padrão.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. II · Calendário Perpétuo</div>
+        <h3>13 Meses × 28 Dias + Dia Zero</h3>
+        <p>
+          Treze meses iguais, quatro semanas perfeitas por mês e 364 dias
+          numerados. O <strong>Dia Zero</strong> fica fora da numeração anual,
+          ancorado na conjunção lunar da primavera. Inclui modo de impressão e
+          exportação PDF de almanaque, em página única ou um mês por página.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. III · Moedim</div>
+        <h3>As 8 Festas Bíblicas / Tempos Nomeados</h3>
+        <p>
+          Cálculo dinâmico de <strong>Páscoa (Pesach), Pães Asmos, Primícias,
+          Pentecostes (Shavuot), Trombetas (Yom Teruah), Dia da Expiação
+          (Yom Kippur), Tabernáculos (Sukkot — 7 dias) e Oitavo Dia
+          (Shemini Atzeret)</strong>. Integração com Google Agenda móvel e
+          exportação <strong>.ICS</strong>, incluindo lembretes de pôr do Sol.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. IV · Camada Lunar</div>
+        <h3>Efemérides &amp; Astronomia da Lua</h3>
+        <p>
+          O ciclo sinódico real da Lua (~29,53 dias) e suas <strong>8 fases
+          lunares</strong> são sobrepostos ao calendário de 28 dias sem deformar
+          os meses. O Dia Zero pode usar <strong>Modo A — Conjunção Astronômica,
+          Modo B — Crescente Visível ou Modo C — Observacional</strong>.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. V · Sistema de Sábado</div>
+        <h3>Ciclo Semanal Contínuo</h3>
+        <p>
+          Ciclo ininterrupto de 7 dias: os Sábados caem nos <strong>Dias 7, 14,
+          21 e 28</strong> de cada mês, preservando 52 Sábados semanais exatos,
+          além do <strong>Sábado Anual do Dia Zero</strong> e da classificação de
+          Grande Sábado quando aplicável.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. VI · Grande Semana</div>
+        <h3>O Relógio Milenar de 7.000 Anos</h3>
+        <p>
+          Modelo cronológico baseado em <strong>2 Pedro 3:8, Salmo 90:4 e
+          Apocalipse 20</strong>: um dia como mil anos, acompanhando os 6.000
+          anos da história humana rumo ao descanso do 7º Milênio.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. VII · Cronologia</div>
+        <h3>Laboratório de Cronologia Comparativa</h3>
+        <p>
+          Compara quatro modelos sem Ano Zero: <strong>Ussher (4004 a.C.),
+          Rabínico Tradicional Anno Mundi (3761 a.C.), Septuaginta LXX
+          (5508 a.C.) e Época Sagrada Astronômica — Modelo Dimenúveis
+          (4026 a.C.)</strong>. Inclui simulador de desvio solar do ciclo de 364
+          dias e ajuste histórico de +1 dia.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. VIII · Escrituras &amp; Céu</div>
+        <h3>Eclipses &amp; Arqueoastronomia</h3>
+        <p>
+          Catálogo de eventos celestes bíblicos documentados, incluindo o estudo
+          do <strong>Dia Longo de Josué 10 em Gibeão</strong> e o candidato de
+          eclipse anular de <strong>30 de outubro de 1207 a.C.</strong>, além do
+          Relógio de Sol de Ezequias.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. IX · Arquitetura Dimenúveis</div>
+        <h3>O Tempo em 6 Camadas</h3>
+        <p>
+          A arquitetura reúne <strong>Tempo Sagrado, Tempo Celestial, Tempo
+          Bíblico, Tempo Milenar, Tempo Histórico e Tempo Dimenúveis</strong>,
+          com fundamentos escriturísticos, léxico técnico e referências a
+          Gênesis 1:14, Êxodo 12:2, Levítico 23, Salmos 104:19, 2 Pedro 3:8 e
+          Apocalipse 20.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. X · Personalização</div>
+        <h3>Ajustes, Alertas &amp; Preferências</h3>
+        <p>
+          Notificações nativas para <strong>Festas, Sábados e Lua Nova</strong>,
+          calibração de coordenadas GPS e personalização dos nomes dos 13 meses.
+          A experiência visual alterna entre <strong>Modo Noite — Obsidiana
+          Celestial</strong> e <strong>Modo Dia — Pergaminho Clássico de Alto
+          Contraste</strong>.
+        </p>
+      </article>
+
+      <article class="calendar-module">
+        <div class="module-number">Cap. XI · Verificação</div>
+        <h3>Motor Matemático Verificado</h3>
+        <p>
+          Suite interativa com <strong>13 testes automatizados em tempo real</strong>
+          para comprovar a integridade matemática do calendário, incluindo
+          duração anual, fronteiras de meses, ciclo semanal, cronologia sem Ano
+          Zero, fases lunares, festas, sobreposições e ancoragem lunar.
+          <strong>100% aprovado.</strong>
+        </p>
+      </article>
+
+    </div>
+
+    <div class="calendar-architecture">
+      <div class="eyebrow">Arquitetura Canônica</div>
+      <h3>Árvore do Tempo — 6 Camadas</h3>
+      <p class="lead">
+        O calendário funciona como uma ponte entre observação astronômica,
+        estrutura bíblica, cronologia histórica e a arquitetura temporal das
+        Dimenúveis.
+      </p>
+
+      <div class="calendar-layers">
+        <div class="calendar-layer"><strong>I. Tempo Sagrado</strong><span>13 meses × 28 dias + Dia Zero</span></div>
+        <div class="calendar-layer"><strong>II. Tempo Celestial</strong><span>Lua, Sol, fases e efemérides</span></div>
+        <div class="calendar-layer"><strong>III. Tempo Bíblico</strong><span>Moedim, Sábados e Escrituras</span></div>
+        <div class="calendar-layer"><strong>IV. Tempo Milenar</strong><span>Grande Semana de 7.000 anos</span></div>
+        <div class="calendar-layer"><strong>V. Tempo Histórico</strong><span>Cronologias a.C./d.C. sem Ano Zero</span></div>
+        <div class="calendar-layer"><strong>VI. Tempo Dimenúveis</strong><span>Arquitetura, léxico e interpretação</span></div>
+      </div>
+    </div>
+
+    <div class="calendar-footer-card">
+      <div>
+        <h3>Calendário Dimenuvel — v1.1</h3>
+        <p>
+          Web App bilíngue, código aberto no GitHub e APK Android Release
+          disponibilizado pelo ciclo automatizado de GitHub Actions.
+        </p>
+      </div>
+
+      <a
+        class="btn primary"
+        href="https://github.com/dimenuvel/Evangelho-das-Dimenuveis-Calendario/actions"
+        target="_blank"
+        rel="noopener"
+      >
+        APK Release · v1.1
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
 <section id="transmissoes">
 
   <div class="wrap">
@@ -1139,10 +1630,10 @@ footer .brand{
 
       <div class="eyebrow">Reconhecimentos</div>
 
-      <h2>Os Dez Abidamentos</h2>
+      <h2>🌀 Os Dez Abidamentos</h2>
 
       <p class="lead">
-      Não Mandamentos, Mas Reconhecimentos.
+        O Evangelho dos Dimenúveis — Não Mandamentos, Mas Reconhecimentos.
       </p>
 
     </div>
