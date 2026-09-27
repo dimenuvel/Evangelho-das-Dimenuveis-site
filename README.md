@@ -36,11 +36,24 @@ EVANGELHO DAS DIMENÚVEIS
 │   ├── Abide Mode / vogais / power-ups
 │   └── História / Infinito / Diário
 │
-└── 🧘 ABIDAR — THE COSMIC CARPET RIDE
-    ├── Modo História
-    ├── Modo Infinito
-    ├── Tapete voador
-    └── Colecionáveis / power-ups / ABIDE
+├── 🧘 ABIDAR — THE COSMIC CARPET RIDE
+│   ├── Modo História
+│   ├── Modo Infinito
+│   ├── Tapete voador
+│   └── Colecionáveis / power-ups / ABIDE
+│
+└── 🌙 CALENDÁRIO BÍBLICO LUNAR & MILENAR
+    ├── Calendário Sagrado 13 × 28 + Dia Zero
+    ├── 8 Fases da Lua / Efemérides Astronômicas
+    ├── 8 Festas Bíblicas / Moedim
+    ├── Sistema de 52 Sábados
+    ├── Grande Semana de 7.000 Anos
+    ├── Laboratório de Cronologia Comparativa
+    ├── Escrituras / Eclipses / Arqueoastronomia
+    ├── Arquitetura do Tempo em 6 Camadas
+    ├── Cosmologia Celestial / 1 Enoque
+    ├── Alertas / GPS / Personalização
+    └── Verificação Matemática do Calendário
 ```
 
 ## 🔗 Destinos
